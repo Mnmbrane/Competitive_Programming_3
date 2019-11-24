@@ -8,7 +8,7 @@ WARN_AS_ERRORS_FLAGS := -pedantic-errors\
 DEBUG_FLAGS				:= -ggdb
 OPT_FLAGS				:= -O0
 CPPFLAGS					:= $(OPT_FLAGS) $(STANDARD_FLAGS) \
-								$(WARN_AS_ERRORS_FLAGS) $(DEBUG_FLAGS)
+								$(WARN_AS_ERRORS_FLAGS) $(DEBUG_FLAGS) -DSAMPLE_FROM_FILE
 
 SRC := Source.cpp
 

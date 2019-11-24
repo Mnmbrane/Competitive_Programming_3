@@ -3,13 +3,13 @@
         {
             "name": "Win32",
             "includePath": [
-                "${workspaceFolder}/**",
-                "${workspaceFolder}/TestDriver/include/**"
+                "${workspaceFolder}/**"
             ],
             "defines": [
                 "_DEBUG",
                 "UNICODE",
-                "_UNICODE"
+                "_UNICODE",
+                "SAMPLE_FROM_FILE"
             ],
             "compilerPath": "/usr/bin/g++",
             "cStandard": "c11",
