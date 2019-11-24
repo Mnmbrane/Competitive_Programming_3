@@ -6,3 +6,19 @@ WARN_AS_ERRORS_FLAGS := -pedantic-errors\
 								-Werror\
 								-Wconversion
 DEBUG_FLAGS				:= -ggdb
+OPT_FLAGS				:= -O0
+CPPFLAGS					:= $(OPT_FLAGS) $(STANDARD_FLAGS) \
+								$(WARN_AS_ERRORS_FLAGS) $(DEBUG_FLAGS)
+
+SRC := Source.cpp
+
+.PHONY all:
+all: Source.o
+
+.cpp.o:
+	$(CXX) $(CPPFLAGS) $< -o $@ -lstdc++
+
+
+.PHONY: clean
+clean:
+	rm -rf *.o
